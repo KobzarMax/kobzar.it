@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nexa";
+  src: url("/fonts/Nexa Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  font-family: "Nexa", sans-serif;
+}
+
+
+.social-filter {
+  filter: invert(77%) sepia(10%) saturate(389%) hue-rotate(55deg) brightness(88%) contrast(85%);
+}
