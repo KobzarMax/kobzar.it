@@ -1,5 +1,8 @@
 import { type Config } from "tailwindcss";
 import { fontFamily } from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
+
+/* eslint-disable @typescript-eslint/unbound-method */
 
 export default {
   content: ["./src/**/*.tsx"],
@@ -28,7 +31,7 @@ export default {
     container: false,
   },
   plugins: [
-    function ({ addComponents }) {
+    plugin(({ addComponents }) => {
       addComponents({
         ".container": {
           maxWidth: "100%",
@@ -57,6 +60,6 @@ export default {
           },
         },
       });
-    },
+    }),
   ],
 } satisfies Config;

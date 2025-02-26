@@ -1,15 +1,13 @@
-import { api, HydrateClient } from "~/trpc/server";
 import Header from "./_components/Header";
 import { Mr_De_Haviland } from "next/font/google";
 import Footer from "./_components/Footer";
+import { Fragment } from "react";
 
 const inter = Mr_De_Haviland({ subsets: ["latin"], weight: "400" });
 
 export default async function Home() {
-  void api.post.getLatest.prefetch();
-
   return (
-    <HydrateClient>
+    <Fragment>
       <Header />
       <main className="flex flex-grow flex-col items-center justify-between bg-main-500">
         <h1
@@ -19,6 +17,6 @@ export default async function Home() {
         </h1>
       </main>
       <Footer />
-    </HydrateClient>
+    </Fragment>
   );
 }
