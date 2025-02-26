@@ -9,9 +9,9 @@ export default async function Home() {
   return (
     <Fragment>
       <Header />
-      <main className="flex flex-grow flex-col items-center justify-between bg-main-500">
+      <main className="flex flex-grow flex-col items-center justify-center bg-main-500">
         <h1
-          className={`my-auto text-center text-7xl font-bold text-main-100 lg:text-[12rem] ${inter.className}`}
+          className={`mb-[-16px] text-center text-7xl font-bold text-main-100 md:mb-0 lg:text-[12rem] ${inter.className}`}
         >
           Coming soon!
         </h1>
