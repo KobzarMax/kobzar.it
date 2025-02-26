@@ -34,7 +34,7 @@ export default function Footer() {
         </Link>
       </div>
       <p className="text-center text-xs text-main-100 md:text-sm">
-        © {year.getFullYear()} KOBZAR.IT, All rights reserved
+        © {year.getFullYear()} KOBZAR.IT. All rights reserved
       </p>
     </footer>
   );
