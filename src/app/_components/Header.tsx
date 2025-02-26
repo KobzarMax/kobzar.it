@@ -30,7 +30,9 @@ export default function Header() {
       <div
         className={`flex h-fit items-center justify-between gap-4 lg:flex-wrap`}
       >
-        <div className={`textxl font-bold text-main-500 md:text-3xl`}>
+        <div
+          className={`w-full text-center text-xl font-bold text-main-500 md:text-left md:text-3xl`}
+        >
           KOBZAR.IT
         </div>
       </div>
