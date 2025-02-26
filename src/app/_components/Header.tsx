@@ -25,7 +25,7 @@ export default function Header() {
     <header
       ref={ref}
       id="header"
-      className={`fixed top-0 z-50 w-full bg-main-100 px-4 py-2.5 md:px-10 md:py-6 ${headerView ? "scrolled shadow-sm" : ""} [.scrolled&]:bg-white/30 [.scrolled&]:py-3`}
+      className={`w-full bg-main-100 px-4 py-2.5 md:px-10 md:py-6 ${headerView ? "scrolled shadow-sm" : ""} [.scrolled&]:bg-white/30 [.scrolled&]:py-3`}
     >
       <div
         className={`flex h-fit items-center justify-between gap-4 lg:flex-wrap`}
