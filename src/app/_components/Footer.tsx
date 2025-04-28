@@ -1,6 +1,6 @@
 import Image, { type StaticImageData } from "next/image";
 import Link from "next/link";
-import { inst, tiktok } from "~/static/icons";
+import { inst, linkedin, tiktok } from "~/static/icons";
 
 export default function Footer() {
   const year = new Date();
@@ -30,6 +30,15 @@ export default function Footer() {
             height={16}
             src={tiktok as StaticImageData}
             alt="tiktok icon"
+          />
+        </Link>
+        <Link target="_blank" href="https://www.kobzarit.com/">
+          <Image
+            className="social-filter"
+            width={20}
+            height={20}
+            src={linkedin as StaticImageData}
+            alt="linkedin icon"
           />
         </Link>
       </div>
