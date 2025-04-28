@@ -32,7 +32,7 @@ export default function Footer() {
             alt="tiktok icon"
           />
         </Link>
-        <Link target="_blank" href="https://www.kobzarit.com/">
+        <Link target="_blank" href="https://www.linkedin.com/company/kobzarit/">
           <Image
             className="social-filter"
             width={20}
